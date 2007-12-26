@@ -29,21 +29,22 @@ or Nagios...
 It is intended as a replacement for the Links plugin that I wrote some
 time ago, but with the following key improvements:
 
-  * Any number of tabs/menu items
-  * For tabs, a Cacti-style tab image is generated, so your additional
+- Any number of tabs/menu items
+- For tabs, a Cacti-style tab image is generated, so your additional
   pages are integrated into Cacti better
-  * It uses Weathermap's access-control code, so you can make tabs
-  that are only visible to certain users
-  * In addition to tabs, there is the option to make Console Menu
-  items, and 'Welcome Page' items.
-  * You can embed an external webpage directly, without writing any
-  HTML, if that's all you need. 
+- It uses Weathermap's access-control code, so you can make tabs that
+  are only visible to certain users
+- In addition to tabs, there is the option to make Console Menu items,
+  and 'Welcome Page' items.
+- You can embed an external webpage directly, without writing any
+  HTML, if that's all you need.
 
 %description -l pl.UTF-8
 To jest bardzo prosta wtyczka dla architektury wtyczek Cacti
 stworzonej przez Jimmy'ego Smitha dla Cacti 0.8.x (0.9.0 ma mieć nowy
-system wtyczek). Pozwala umieścić dowolną treść HTML jako zakładkę na
-górnej stronie. Można użyć jej do zintegrowania innych narzędzi z Cacti
+system wtyczek). Pozwala umieścić dowolną treść HTML jako
+zakładkę na górnej stronie. Można użyć jej do zintegrowania
+innych narzędzi z Cacti
 - np. odnośników do Smokepinga, Request Trackera lub Nagiosa...
 
 %prep
@@ -54,7 +55,7 @@ find '(' -name '*.php' -o -name '*.inc' ')' -print0 | xargs -0 sed -i -e 's,\r$,
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{webcactipluginroot}
-cp -aRf * $RPM_BUILD_ROOT%{webcactipluginroot}
+cp -a * $RPM_BUILD_ROOT%{webcactipluginroot}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
