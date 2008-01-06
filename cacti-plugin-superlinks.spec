@@ -1,7 +1,7 @@
 %define		namesrc	superlinks
 %include	/usr/lib/rpm/macros.perl
 Summary:	Plugin for Cacti - SuperLinks
-Summary(pl.UTF-8):	Wtyczka do Cacti - SuperLinks
+Summary(pl.UTF-8):	Wtyczka do Cacti - SuperLinks (dodatkowe odnośniki)
 Name:		cacti-plugin-superlinks
 Version:	0.71
 Release:	1
