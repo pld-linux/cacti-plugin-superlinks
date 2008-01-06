@@ -1,7 +1,7 @@
 %define		namesrc	superlinks
 %include	/usr/lib/rpm/macros.perl
-Summary:	Plugin for Cacti - Links
-Summary(pl.UTF-8):	Wtyczka do Cacti - Links
+Summary:	Plugin for Cacti - SuperLinks
+Summary(pl.UTF-8):	Wtyczka do Cacti - SuperLinks
 Name:		cacti-plugin-superlinks
 Version:	0.71
 Release:	1
@@ -42,10 +42,23 @@ time ago, but with the following key improvements:
 %description -l pl.UTF-8
 To jest bardzo prosta wtyczka dla architektury wtyczek Cacti
 stworzonej przez Jimmy'ego Smitha dla Cacti 0.8.x (0.9.0 ma mieć nowy
-system wtyczek). Pozwala umieścić dowolną treść HTML jako
-zakładkę na górnej stronie. Można użyć jej do zintegrowania
-innych narzędzi z Cacti
-- np. odnośników do Smokepinga, Request Trackera lub Nagiosa...
+system wtyczek). Pozwala podpiąć dowolną liczbę stron HTML dowolnej
+treści pod zakładki na górnej części strony lub jako dodatkowe wpisy
+w menu Console. Wtyczki tej można używać do integracji innych narzędzi
+w Cacti - w ten sposób można mieć w Cacti odnośniki do Smokepinga,
+Request Trackera czy Nagiosa.
+
+Wtyczka ma zastąpić wtyczkę Links tego samego autora, napisaną
+wcześniej; ma następujące rozszerzenia:
+- dowolną liczbę elementów zakładek/menu
+- dla zakładek generowany jest obrazek w stylu Cacti, więc dodatkowe
+  strony lepiej integrują się z Cacti
+- wykorzystuje kod kontroli dostępu z Weathermap, więc zakładki mogą
+  być widoczne tylko dla wybranych użytkowników
+- oprócz zakładek jest możliwość tworzenia elementów menu Console oraz
+  strony powitalnej
+- można osadzać zewnętrzne strony bezpośrednio, bez pisania
+  jakiegokolwiek HTML-a.
 
 %prep
 %setup -q -n %{namesrc}
