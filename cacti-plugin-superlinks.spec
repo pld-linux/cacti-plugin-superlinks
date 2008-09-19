@@ -3,12 +3,12 @@
 Summary:	Plugin for Cacti - SuperLinks
 Summary(pl.UTF-8):	Wtyczka do Cacti - SuperLinks (dodatkowe odnośniki)
 Name:		cacti-plugin-superlinks
-Version:	0.71
+Version:	0.72
 Release:	1
 License:	GPL v2
 Group:		Applications/WWW
 Source0:	http://wotsit.thingy.com/haj/cacti/%{namesrc}-%{version}.zip
-# Source0-md5:	2fe58f1fe66071c90b2c4a9a68ed8fdb
+# Source0-md5:	02fb63902642b496d68824358fabeced
 URL:		http://wotsit.thingy.com/haj/cacti/superlinks-plugin.html
 BuildRequires:	rpm-perlprov
 Requires:	cacti
