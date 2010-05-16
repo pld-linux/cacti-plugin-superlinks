@@ -11,6 +11,7 @@ Source0:	http://wotsit.thingy.com/haj/cacti/%{plugin}-%{version}.zip
 # Source0-md5:	02fb63902642b496d68824358fabeced
 URL:		http://wotsit.thingy.com/haj/cacti/superlinks-plugin.html
 BuildRequires:	rpm-perlprov
+BuildRequires:	unzip
 Requires:	cacti
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
