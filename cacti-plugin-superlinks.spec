@@ -8,7 +8,7 @@ Summary:	Plugin for Cacti - SuperLinks
 Summary(pl.UTF-8):	Wtyczka do Cacti - SuperLinks (dodatkowe odnośniki)
 Name:		cacti-plugin-%{plugin}
 Version:	1.3
-Release:	6
+Release:	7
 License:	GPL v2
 Group:		Applications/WWW
 Source0:	http://docs.cacti.net/_media/plugin:superlinks-v%{version}-1.tgz
@@ -18,11 +18,11 @@ BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.553
 Requires:	cacti
 Requires:	cacti(pia) >= 2.9
+Requires:	php(core) >= %{php_min_version}
 Requires:	php(gd)
 Requires:	php(mysql)
 Requires:	php(pcre)
 Requires:	php(session)
-Requires:	php-common >= 4:%{php_min_version}
 Requires:	php-date
 Obsoletes:	cacti-plugin-links
 BuildArch:	noarch
