@@ -3,7 +3,6 @@
 # - use system jquery package
 %define		plugin	superlinks
 %define		php_min_version 5.1.1
-%include	/usr/lib/rpm/macros.php
 Summary:	Adds Tabs, Menu Items and allows several other UI customisations
 Summary(pl.UTF-8):	Wtyczka do Cacti - SuperLinks (dodatkowe odnośniki)
 Name:		cacti-plugin-%{plugin}
